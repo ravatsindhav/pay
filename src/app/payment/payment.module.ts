@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { PaymentRoutingModule } from './payment-routing.module';
 import { PayComponent } from './pay/pay.component';
-
-
+import {MatStepperModule} from '@angular/material/stepper';
+import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [
     PayComponent
@@ -12,7 +12,9 @@ import { PayComponent } from './pay/pay.component';
   exports: [PayComponent],
   imports: [
     CommonModule,
-    PaymentRoutingModule
+    PaymentRoutingModule,
+    MatStepperModule,
+    MatButtonModule
   ]
 })
 export class PaymentModule { }
