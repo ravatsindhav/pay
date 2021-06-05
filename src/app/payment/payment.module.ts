@@ -5,6 +5,7 @@ import { PaymentRoutingModule } from './payment-routing.module';
 import { PayComponent } from './pay/pay.component';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatButtonModule} from '@angular/material/button';
+import {MatRadioModule} from '@angular/material/radio';
 @NgModule({
   declarations: [
     PayComponent
@@ -14,7 +15,8 @@ import {MatButtonModule} from '@angular/material/button';
     CommonModule,
     PaymentRoutingModule,
     MatStepperModule,
-    MatButtonModule
+    MatButtonModule,
+    MatRadioModule,
   ]
 })
 export class PaymentModule { }

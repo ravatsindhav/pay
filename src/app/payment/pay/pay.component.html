@@ -1,18 +1,37 @@
 <!-- Stepper form  -->
-<div class="container">
-    <div class="row">
-        <h1>My First Bootstrap Page</h1>
-        <p>This is some text.</p>
+
+
+<nav class="navbar navbar-light bg-default" style="background-color: #e0e0e0;">
+    <div class="container">
+        <a class="navbar-brand">
+            <img src="https://fj.gurukul.org/resources/img/logo.png" width="120" height="auto">
+        </a>
+        <a class="navbar-brand">
+            <img src="https://fj.gurukul.org/resources/img/Fee-Junction-logo.png" width="150" height="auto">
+        </a>
     </div>
+</nav>
+
+<div class="container">
+
+    <h2 class="mt-4">Dear Parents,</h2>
+    <p style="margin-top: -10px;">Shree Swaminarayan Gurukul has now more options available for Payment Fees to conviene
+        you in the highest possible way. i.e. we have tied up with some banks which will serve you for cash payments and
+        online options to pay the fees through Net Banking (48 Banks), Debit Card or Credit Card.</p>
+
     <div class="row">
         <mat-vertical-stepper style="width:100%;">
             <!-- step 1 -->
             <mat-step label="Step 1" state="phone">
                 <ng-template matStepLabel style="width:100% !important;">
                     <div class="row">
-                        <div class="col-12">
-                            <i class="fas fa-user text-primary" style="font-size:25px;"></i>
-                            <span class="ml-3 text-primary" style="font-size:25px;">Student Detail</span>
+                        <div class="col-6">
+                            <i class="fas fa-user text-success" style="font-size:23px;"></i>
+                            <span class="ml-3 text-success" style="font-size:23px;">Student Detail</span>
+                        </div>
+                        <div class="col-6">
+                            <p class="badge badge-success badge-sm float-right"
+                                style="font-size:14px; font-weight: 500;">AA5856</p>
                         </div>
                     </div>
                 </ng-template>
@@ -20,10 +39,9 @@
                     <div class="row mt-3">
                         <div class="col-md-4">
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" style="outline:none !important;"
-                                    placeholder="Member ID">
+                                <input type="text" class="form-control" placeholder="Member ID....">
                                 <div class="input-group-append ">
-                                    <button class="input-group-text bg-warning">Go</button>
+                                    <button class="input-group-text bg-success text-white">Go</button>
                                 </div>
                             </div>
                         </div>
@@ -36,38 +54,91 @@
                               </div> -->
                         </div>
                     </div>
-                    <button class="btn btn-primary" mat-button matStepperNext ><i (click)="step2=true">Go Next</i> </button>
+                    <button class="btn btn-success" style="color: #fff;" mat-button matStepperNext> <i
+                            (click)="step2=true">Go Next</i>
+                        <span class="material-icons ml-2" style="font-size: 17px; "> east </span> </button>
                 </ng-template>
             </mat-step>
             <!-- step 2 -->
-            <mat-step *ngIf="step2">
+            <mat-step>
                 <ng-template matStepLabel>
                     <div class="row">
                         <div class="col-12">
-                            <i class="fas fa-th-list text-success" style="font-size:25px;"></i>
-                            <span class="ml-3 text-success" style="font-size:25px;">Fees Detail</span>
+                            <i class="fas fa-th-list" style="font-size:23px; color: rgb(63,81,181);"></i>
+                            <span class="ml-3" style="font-size:23px; color: rgb(63,81,181);">Fees Detail</span>
                         </div>
                     </div>
                 </ng-template>
                 <ng-template matStepContent>
-                    <p>This content was also rendered lazily</p>
-                    <button mat-button matStepperPrevious>Back</button>
-                    <button mat-button matStepperNext>Next</button>
+
+
+
+                    <div class="card mt-2 border-0" style="background-color: #f5f5f5; margin-left: -10px;">
+                        <div class="card-header border-0" style=" border-radius: 0">
+                            <h2 style="margin-bottom: -1px; color: #616161; color: rgb(63,81,181);">SCHOOL FEE - II</h2>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-md-3 border-right">
+                                <h3 style="margin-left: 15px; font-weight: 500;">&#8833; Academic Year & Branch :</h3>
+                                <p style="margin-left: 30px; margin-top: -8px; color: #757575 ;">2021-2022 - BANGALORE
+                                </p>
+                            </div>
+                            <div class="col-md-3 border-right">
+                                <h3 style="margin-left: 15px; font-weight: 500;">&#8833; Fee Type & Installment :</h3>
+                                <p style="margin-left: 30px; margin-top: -8px; color: #757575 ;">SCHOOL FEE - II</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 style="margin-left: 15px; font-weight: 500;">&#8833; Standard : III</h3>
+                                <p style="margin-left: 30px; margin-top: -8px; color: #757575;">Kindly contact your
+                                    Branch Office in case of any Query. Note that Fees once paid is</p>
+                                <p
+                                    style="margin-left: 30px; margin-top: -7px; font-size: 11.2px; letter-spacing: 0.5px; color: red; background-color: #e0e0e0; width: 231px; border-radius: 3px;">
+                                    &nbsp;&nbsp;&nbsp;NOT REFUNDABLE OR TRANSFERABLE.</p>
+                            </div>
+                        </div>
+                        <hr style="margin-top: -0px;">
+
+                        <div class="row mt-2">
+                            <div class="col-md-3">
+                                <h1 class="text-center text-success mt-2" style="font-weight: 500;"> 27,000 /-</h1>
+                            </div>
+                            <div class="col-md-4">
+                                <button type="button" class="btn btn-success btn-sm"
+                                    style="padding-left: 70px; padding-right: 10px; margin-left: 30px;">Make Payment <i
+                                        class="fas fa-angle-double-right ml-5"></i></button>
+                                <p class="mt-1 ml-5 pl-5" style="color: #757575;">*Due Date : <span
+                                        class="badge badge-danger" style="font-weight: 500; letter-spacing: 0.5px;">05
+                                        June</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-info" mat-button matStepperPrevious>Back</button>
+                    <button class="ml-3 btn btn-primary" mat-button matStepperNext ><i (click)="step3=true">Go Next</i> </button>
+
                 </ng-template>
             </mat-step>
             <!-- step 3 -->
-            <mat-step *ngIf="step3">
+            <mat-step>
                 <ng-template matStepLabel>
                     <div class="row">
-                        <div class="col-4">
-                            <i class="fas fa-credit-card" style="font-size:2 5px;"></i>
+                        <div class="col-12">
+                            <i class="fas fa-credit-card" style="font-size:23px; color: #ef5350;"></i>
+                            <span class="ml-3" style="font-size:23px; color: #ef5350;">Payment Option</span>
                         </div>
-                        <div class="col-4">sdf</div>
-                        <div class="col-4">dsf</div>
                     </div>
                 </ng-template>
-                <p>This content was rendered eagerly</p>
-                <button mat-button matStepperPrevious>Back</button>
+                <div class="card mt-2 border-0" style="background-color: #f5f5f5; margin-left: -10px;">
+                    <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group">
+                        <mat-radio-button class="example-radio-button" value="1">Cash / Bank Challan</mat-radio-button><br>
+                        <mat-radio-button class="example-radio-button" value="2">Net Banking</mat-radio-button><br>
+                        <mat-radio-button class="example-radio-button" value="3">Credit / Debit Card</mat-radio-button><br>
+                        <mat-radio-button class="example-radio-button" value="4">RTGS / NEFT / IMPS</mat-radio-button><br>
+                        <mat-radio-button class="example-radio-button" value="5">Paytm</mat-radio-button><br>
+                        <mat-radio-button class="example-radio-button" value="6">Wallets</mat-radio-button>
+                    </mat-radio-group>
+                </div>
             </mat-step>
         </mat-vertical-stepper>
     </div>
